@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz game</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <h1>Quiz-app</h1>
+
+      <div class="user-hi">
+        <h4>Hello, <span class="name">Lucas</span></h4>
+      </div>
+    </nav>
+
+    <div class="container">
+      <h1>
+        Here are all quizes we've done until now <span class="number"></span>:
+      </h1>
+      <div class="quiz-container"></div>
+
+      <div class="game-container">
+        <p class="score"></p>
+        <p class="time">01:23</p>
+
+        <h1 class="question"></h1>
+        <div class="answers">
+          <form>
+            <div class="answer-controller">
+              <input type="radio" class="answer" id="a" />
+              <label class="answer-a" for="a"></label>
+            </div>
+
+            <div class="answer-controller">
+              <input type="radio" class="answer" id="b" />
+              <label class="answer-b" for="b"></label>
+            </div>
+
+            <div class="answer-controller">
+              <input type="radio" class="answer" id="c" />
+              <label class="answer-c" for="c"></label>
+            </div>
+
+            <div class="answer-controller">
+              <input type="radio" class="answer" id="d" />
+              <label class="answer-d" for="d"></label>
+            </div>
+            <button class="btn next">Next question</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <h1>Quiz app policy</h1>
+      <p>
+        This project is is still in development phase since:
+        <span class="time-spent">12.10.2022</span>
+      </p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

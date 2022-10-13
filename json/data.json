@@ -1,0 +1,108 @@
+[
+  {
+    "language": "JavaScript",
+    "image": "https://images.unsplash.com/photo-1619410283995-43d9134e7656?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
+    "questions": [
+      {
+        "question": "How many variable types do we have in JavaScript?",
+        "a": 3,
+        "b": 1,
+        "c": 5,
+        "d": 2,
+        "correct": "a"
+      },
+      {
+        "question": "Which of the types are primitive?",
+        "a": "Function, Object, Array, Class",
+        "b": "Class, undefined, Boolean, Number",
+        "c": "Array, String, Symbol, Function",
+        "d": "String, Boolean, Number, undefined, null, Symbol",
+        "correct": "d"
+      },
+      {
+        "question": "What are object prototypes?",
+        "a": "A behaviour that occurs with variables declared using let and const keywords.",
+        "b": "A new way to extract elements from an object or an array.",
+        "c": "A blueprint of an object.",
+        "d": "String, Boolean, Number, undefined, null, Symbol",
+        "correct": "c"
+      },
+      {
+        "question": "Is JavaScript a statically typed or a dynamically typed language?",
+        "a": "Statically",
+        "b": "No of them",
+        "c": "Dynamically",
+        "d": "WHO THE FUCK KNOWS THAT SHIT?",
+        "correct": "c"
+      },
+      {
+        "question": "What is an Immediately Invoked Function in JavaScript?",
+        "a": "Behaviour that occurs with variables declared using let and const keywords. It is a behaviour where we try to access a variable before it is initialized. ",
+        "b": "A function that runs as soon as it is defined.",
+        "c": "A syntactic sugars for constructor functions",
+        "d": "String, Boolean, Number, undefined, null, Symbol",
+        "correct": "a"
+      },
+      {
+        "question": "What is the role of deferred scripts in JavaScript?",
+        "a": "Your page will be affected if your network is a bit slow, or if the script is very hefty.",
+        "b": "Speeds up the usage of your project, if your Network is shit",
+        "c": "the script waits for the HTML parser to finish before executing it.",
+        "d": "All answers are correct",
+        "correct": "d"
+      },
+      {
+        "question": "What are callbacks?",
+        "a": "A function that will be executed after another function gets executed.",
+        "b": "Blueprint of an object.",
+        "c": "A technique to iterate over an operation by having a function call itself repeatedly until it arrives at a result.",
+        "d": "A form of caching where the return value of a function is cached based on its parameters. ",
+        "correct": "c"
+      },
+      {
+        "question": "What is currying in JavaScript?",
+        "a": "An advanced technique to transform a function of arguments n, to n functions of one or fewer arguments.",
+        "b": "An ability of a function to remember the variables and functions that are declared in its outer scope.",
+        "c": "A technique to iterate over an operation by having a function call itself repeatedly until it arrives at a result.",
+        "d": "A form of caching where the return value of a function is cached based on its parameters. ",
+        "correct": "c"
+      },
+      {
+        "question": "What is memoization?",
+        "a": "A function that will be executed after another function gets executed.",
+        "b": "Blueprint of an object.",
+        "c": "A technique to iterate over an operation by having a function call itself repeatedly until it arrives at a result.",
+        "d": "A form of caching where the return value of a function is cached based on its parameters. ",
+        "correct": "d"
+      },
+      {
+        "question": "What are arrow functions?",
+        "a": "Extended kind of function.",
+        "b": "A new and shorter syntax for declaring functions. ",
+        "c": "A form of caching where the return value of a function is cached based on its parameters. ",
+        "d": "A technique to iterate over an operation by having a function call itself repeatedly until it arrives at a result.",
+        "correct": "c"
+      }
+    ]
+  },
+  {
+    "language": "Python",
+    "image": "https://images.unsplash.com/photo-1591439657848-9f4b9ce436b9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1602&q=80",
+    "questions": [
+      {
+        "question": "What are the feature of Python?",
+        "a": "Python is an interpreted language.",
+        "b": "Python is dynamically typed",
+        "c": "Writing Python code is quick but running it is often slower than compiled languages.",
+        "d": "All answers are correct"
+      },
+      {
+        "question": "What is slicing in Python?",
+        "a": "It's used to access parts of sequences like lists, tuples, and strings. ",
+        "b": "A naming system used to make sure that names are unique to avoid naming conflicts.",
+        "c": "A collection of Python packages",
+        "d": "Namespaces containing multiple modules."
+      }
+    ]
+  }
+]
