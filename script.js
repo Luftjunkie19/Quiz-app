@@ -4,10 +4,10 @@ const answers = document.querySelectorAll(".answer");
 const gameContainer = document.querySelector(`.game-container`);
 const gameOver = document.querySelector(".game-over");
 const question = document.querySelector(".question");
-const answerA = document.querySelector(".answer-a");
-const answerB = document.querySelector(".answer-b");
-const answerC = document.querySelector(".answer-c");
-const answerD = document.querySelector(".answer-d");
+const answerA = document.querySelector("#answer-a");
+const answerB = document.querySelector("#answer-b");
+const answerC = document.querySelector("#answer-c");
+const answerD = document.querySelector("#answer-d");
 const scoreAmount = document.querySelector(".score");
 const timeHolder = document.querySelector(".time");
 const nextBtn = document.querySelector(".btn.next");
@@ -22,18 +22,13 @@ function removeChecked() {
 
 function getSelected() {
   let finalAnswer;
-  answers.forEach((answer) => {
-    answer.addEventListener("click", () => {
-      removeChecked();
-      answer.checked = true;
 
-      if (answer.checked) {
-        finalAnswer = answer;
-        console.log(finalAnswer);
-        return finalAnswer;
-      }
-    });
+  answers.forEach((answer) => {
+    if (answer.checked) {
+      finalAnswer = answer.id;
+    }
   });
+  return finalAnswer;
 }
 
 async function renderQuizes() {
@@ -68,6 +63,7 @@ let currentPoints = 0;
 let timeForAnswer = 0;
 
 async function getQuiz(e) {
+  removeChecked();
   const res = await fetch("/json/data.json");
 
   const data = await res.json();
@@ -95,17 +91,26 @@ async function getQuiz(e) {
     }, 1000);
 
     nextBtn.addEventListener(`click`, (e) => {
+      let finalAnswer = getSelected();
+      console.log(finalAnswer);
+
       e.preventDefault();
       removeChecked();
-      currentQuestion++;
 
+      if (
+        finalAnswer === data[numberOfQuiz].questions[currentQuestion].correct
+      ) {
+        currentPoints++;
+      }
+
+      currentQuestion++;
       console.log(data[numberOfQuiz].questions.length);
 
       if (currentQuestion > data[numberOfQuiz].questions.length - 1) {
         currentQuestion = data[numberOfQuiz].questions.length - 1;
         gameContainer.style.display = "none";
         gameOver.style.display = "flex";
-        finalInfo.innerText = "Oh not this time";
+        finalInfo.innerText = "Yo it's your result";
         finalMessage.innerText = `Your score is ${currentPoints}/${data[numberOfQuiz].questions.length}`;
       }
 
