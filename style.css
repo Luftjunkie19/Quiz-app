@@ -71,6 +71,17 @@ body {
   width: 650px;
 }
 
+.game-over {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  background-color: #215f9d;
+  padding: 20px;
+  width: 500px;
+}
+
 .score {
   position: absolute;
   top: 0;
@@ -107,6 +118,11 @@ body {
 
 label {
   font-size: 16px;
+}
+
+.btn.next:hover {
+  transform: translateY(0);
+  box-shadow: none;
 }
 
 .quiz-choice {
