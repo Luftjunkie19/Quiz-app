@@ -81,7 +81,7 @@
         "b": "A new and shorter syntax for declaring functions. ",
         "c": "A form of caching where the return value of a function is cached based on its parameters. ",
         "d": "A technique to iterate over an operation by having a function call itself repeatedly until it arrives at a result.",
-        "correct": "c"
+        "correct": "b"
       }
     ]
   },

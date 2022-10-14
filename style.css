@@ -187,3 +187,13 @@ label {
   font-weight: 800;
   font-size: 24px;
 }
+
+.video-size {
+  height: 250px;
+  width: 400px;
+}
+
+.video-size video {
+  height: 100%;
+  width: 100%;
+}
