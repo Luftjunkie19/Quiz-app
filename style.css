@@ -189,11 +189,13 @@ label {
 }
 
 .video-size {
-  height: 250px;
-  width: 400px;
+  position: relative;
+  width: 450px;
+  height: 240px;
+  padding: 15px;
 }
 
 .video-size video {
-  height: 100%;
-  width: 100%;
+  width: 100% !important;
+  height: auto !important;
 }

@@ -128,7 +128,7 @@ async function getQuiz(e) {
           playVideo("videos/XHSADFJHSRYHFSHGPIIHYE_Trim.mp4");
         } else if (procentage < 0.7 && procentage >= 0.5) {
           showMessage("Don't worry, the mistakes sometimes occur😅");
-          playVideo("videos/Owca wk Lidl_Trim.mp4");
+          playVideo("videos/Owca - Lidl (Official Music Video).mp4");
         } else {
           showMessage(
             "Maybe the best solution will be to repeat, what you have been learning, hm?"
