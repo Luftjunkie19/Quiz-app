@@ -82,7 +82,16 @@
         "c": "A form of caching where the return value of a function is cached based on its parameters. ",
         "d": "A technique to iterate over an operation by having a function call itself repeatedly until it arrives at a result.",
         "correct": "b"
-      }
+      },
+      {
+        "question": "What does DOM stand for?",
+        "a": "Document Object Model",
+        "b": "Dumb organisation's management",
+        "c": "Delivery over Me",
+        "d": "Drive on Mountain",
+        "correct": "a"
+      },
+      {}
     ]
   },
   {
@@ -104,6 +113,22 @@
         "c": "A collection of Python packages",
         "d": "Namespaces containing multiple modules.",
         "correct": "a"
+      },
+      {
+        "question": "What is monkey patching?",
+        "a": "Refers to dynamic modifications of a class or module at run-time.",
+        "b": "A special library, where all focused on monkey is.",
+        "c": "Phyton Package, with monkey features.",
+        "d": "No clue.",
+        "correct": "a"
+      },
+      {
+        "question": "What is polymorphism in Python?",
+        "a": "It's another subdivision of the built-in dict class.",
+        "b": "It is a set of rules that specify how to format Python code for maximum readability.",
+        "c": "An environment variable, which is used when a module is imported.",
+        "d": "Ability to take multiple forms.",
+        "correct": "d"
       }
     ]
   }

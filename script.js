@@ -95,9 +95,9 @@ async function getQuiz(e) {
     answerD.innerText = data[numberOfQuiz].questions[currentQuestion].d;
     scoreAmount.innerText = `Score: ${currentPoints}`;
 
-    setInterval(() => {
+    let interval = setInterval(() => {
       timeForAnswer++;
-      timeHolder.innerText = `${timeForAnswer}`;
+      timeHolder.innerText = `Seconds: ${timeForAnswer}`;
     }, 1000);
 
     nextBtn.addEventListener(`click`, (e) => {
@@ -118,6 +118,7 @@ async function getQuiz(e) {
 
       if (currentQuestion > data[numberOfQuiz].questions.length - 1) {
         currentQuestion = data[numberOfQuiz].questions.length - 1;
+        clearInterval(interval);
         gameContainer.style.display = "none";
         gameOver.style.display = "flex";
 
