@@ -60,6 +60,14 @@
         "correct": "c"
       },
       {
+        "question": "What are falsy value?",
+        "a": "1, [], {}",
+        "b": "False, undefined, null, ``, 0, NaN, -0 ",
+        "c": "NaN, 0, null",
+        "d": "It does not exist",
+        "correct": "b"
+      },
+      {
         "question": "What is currying in JavaScript?",
         "a": "An advanced technique to transform a function of arguments n, to n functions of one or fewer arguments.",
         "b": "An ability of a function to remember the variables and functions that are declared in its outer scope.",
@@ -90,6 +98,22 @@
         "c": "Delivery over Me",
         "d": "Drive on Mountain",
         "correct": "a"
+      },
+      {
+        "question": "What are non-primitive data?",
+        "a": "Object, Function, Array",
+        "b": "Class, Array, String",
+        "c": "Boolean, Number, Object",
+        "d": "Undefined, false, -1",
+        "correct": "a"
+      },
+      {
+        "question": "What are truthy values?",
+        "a": "function, Class, {}, ()",
+        "b": "[], {}",
+        "c": "===`false`, ===`0`, (), [], {} and all others.",
+        "d": "No of them.",
+        "correct": "c"
       }
     ]
   },
