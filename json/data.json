@@ -109,11 +109,19 @@
       },
       {
         "question": "What are truthy values?",
-        "a": "function, Class, {}, ()",
-        "b": "[], {}",
-        "c": "===`false`, ===`0`, (), [], {} and all others.",
+        "a": "function, Class, { }, ( )",
+        "b": "[ ], { }",
+        "c": "===`false`, ===`0`, ( ), [ ], { } and all others.",
         "d": "No of them.",
         "correct": "c"
+      },
+      {
+        "question": "What is Object Destructuring?",
+        "a": "A new way to extract elements from an object or an array.",
+        "b": "A function that removes some properties of object.",
+        "c": "A special class of functions.",
+        "d": "A Set is a collection of unique and ordered elements.",
+        "correct": "a"
       }
     ]
   },

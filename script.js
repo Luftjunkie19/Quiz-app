@@ -13,6 +13,7 @@ const timeHolder = document.querySelector(".time");
 const nextBtn = document.querySelector(".btn.next");
 const finalInfo = document.querySelector(".info");
 const finalMessage = document.querySelector(".message");
+const timeNeeded = document.querySelector(".time-text");
 let video = document.querySelector("video");
 
 function playVideo(src) {
@@ -39,6 +40,10 @@ function getSelected() {
 
 function showMessage(info) {
   finalInfo.innerText = `${info}`;
+}
+
+function showTime(msg) {
+  timeNeeded.innerText = `${msg}`;
 }
 
 async function renderQuizes() {
@@ -119,21 +124,27 @@ async function getQuiz(e) {
       if (currentQuestion > data[numberOfQuiz].questions.length - 1) {
         currentQuestion = data[numberOfQuiz].questions.length - 1;
         clearInterval(interval);
+
+        let time = timeHolder.innerText.split(" ")[1];
+
         gameContainer.style.display = "none";
         gameOver.style.display = "flex";
 
         let procentage = currentPoints / data[numberOfQuiz].questions.length;
 
         if (procentage >= 0.7) {
-          showMessage("Yo, your Result is amazing:");
+          showMessage(`Yo, your Result is amazing`);
+          showTime(`You did all in ${time} seconds !`);
           playVideo("videos/XHSADFJHSRYHFSHGPIIHYE_Trim.mp4");
         } else if (procentage < 0.7 && procentage >= 0.5) {
           showMessage("Don't worry, the mistakes sometimes occur😅");
+          showTime(`You did all in ${time} seconds !`);
           playVideo("videos/Owca - Lidl (Official Music Video).mp4");
         } else {
           showMessage(
             "Maybe the best solution will be to repeat, what you have been learning, hm?"
           );
+          showTime(`You did all in ${time} seconds !`);
           playVideo("videos/OWCA WK - motywacja_Trim.mp4");
         }
 
