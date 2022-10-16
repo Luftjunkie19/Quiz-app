@@ -133,6 +133,7 @@
       }
     ]
   },
+
   {
     "language": "Python",
     "image": "https://images.unsplash.com/photo-1591439657848-9f4b9ce436b9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1602&q=80",
@@ -215,10 +216,35 @@
         "b": "31 characters",
         "c": "63 characters",
         "d": "None of the mentioned",
-        "correct": "c"
+        "correct": "d"
+      },
+      {
+        "question": "Which module in the python standard library parses options received from the command line?",
+        "a": "main",
+        "b": "getopt",
+        "c": "getarg",
+        "d": "os",
+        "correct": "b"
+      },
+      {
+        "question": "Which one of the following is not a keyword in Python language?",
+        "a": "nonlocal",
+        "b": "assert",
+        "c": "pass",
+        "d": "eval",
+        "correct": "d"
+      },
+      {
+        "question": "What is the order of namespaces in which Python looks for an identifier?",
+        "a": "Python first searches the local namespace, then the global namespace and finally the built-in namespace",
+        "b": "Python first searches the global namespace, then the local namespace and finally the built-in namespace",
+        "c": "Python first searches the built-in namespace, then the local namespace and finally the global namespace",
+        "d": "Python first searches the built-in namespace, then the global namespace and finally the local namespace",
+        "correct": "a"
       }
     ]
   },
+
   {
     "language": "C++",
     "image": "https://images.unsplash.com/photo-1635775017492-1eb935a082a4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
