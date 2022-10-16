@@ -15,6 +15,7 @@ const finalInfo = document.querySelector(".info");
 const finalMessage = document.querySelector(".message");
 const timeNeeded = document.querySelector(".time-text");
 const moveBackBtn = document.querySelector(".btn.move-back");
+const headerText = document.querySelector(".header");
 let video = document.querySelector("video");
 
 function playVideo(src) {
@@ -87,11 +88,11 @@ async function getQuiz(e) {
   let target = e.target;
   if (target.classList.contains("move-to")) {
     e.preventDefault();
+    headerText.style.display = "none";
     gameContainer.style.display = "flex";
     quizContainer.style.display = "none";
 
     let numberOfQuiz = +target.id;
-    console.log(numberOfQuiz);
     console.log(data[numberOfQuiz].questions[currentQuestion]);
 
     question.innerText = data[numberOfQuiz].questions[currentQuestion].question;

@@ -4,6 +4,14 @@
     "image": "https://images.unsplash.com/photo-1619410283995-43d9134e7656?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
     "questions": [
       {
+        "question": "Who invented JavaScript?",
+        "a": "Rasmus Lerdorf",
+        "b": "James Gosling",
+        "c": "Brendan Eich",
+        "d": "Anders Hejlsberg",
+        "correct": "c"
+      },
+      {
         "question": "How many variable types do we have in JavaScript?",
         "a": 3,
         "b": 1,
@@ -154,11 +162,153 @@
         "correct": "a"
       },
       {
-        "question": "What is polymorphism in Python?",
-        "a": "It's another subdivision of the built-in dict class.",
-        "b": "It is a set of rules that specify how to format Python code for maximum readability.",
-        "c": "An environment variable, which is used when a module is imported.",
-        "d": "Ability to take multiple forms.",
+        "question": "Who developed Python Programming Language?",
+        "a": "Niene Stom",
+        "b": "Rasmus Lerdorf",
+        "c": "Wick van Rossum",
+        "d": "Guido van Rossum",
+        "correct": "d"
+      },
+      {
+        "question": "Which keyword is used for function in Python language?",
+        "a": "Fun",
+        "b": "Function",
+        "c": "Def",
+        "d": "Define",
+        "correct": "c"
+      },
+      {
+        "question": "Is Python case sensitive when dealing with identifiers?",
+        "a": "No",
+        "b": "Yes",
+        "c": "None of the mentioned",
+        "d": "Machine dependent",
+        "correct": "a"
+      },
+      {
+        "question": "Python supports the creation of anonymous functions at runtime, using a construct called?",
+        "a": "pi",
+        "b": "anonymous",
+        "c": "none of the mentioned",
+        "d": "lambda",
+        "correct": "d"
+      },
+      {
+        "question": "Which of the following functions is a built-in function in python?",
+        "a": "factorial()",
+        "b": " print()",
+        "c": "seed()",
+        "d": "sqrt()",
+        "correct": "b"
+      },
+      {
+        "question": "Which one of the following is the use of function in python?",
+        "a": "All of the mentioned",
+        "b": "Functions don’t provide better modularity for your application",
+        "c": "Functions are reusable pieces of programs.",
+        "d": "You can’t also create your own functions",
+        "correct": "c"
+      },
+      {
+        "question": "What is the maximum possible length of an identifier in Python?",
+        "a": "79 characters",
+        "b": "31 characters",
+        "c": "63 characters",
+        "d": "None of the mentioned",
+        "correct": "c"
+      }
+    ]
+  },
+  {
+    "language": "C++",
+    "image": "https://images.unsplash.com/photo-1635775017492-1eb935a082a4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
+    "questions": [
+      {
+        "question": "What are access modifiers?",
+        "a": "It defines how to access the members of the class outside the class scope.",
+        "b": "Displaying the essential details to the user while hiding the irrelevant or particular details that you don’t want to show to a user.",
+        "c": "The variables that store the memory address of another variable.",
+        "d": "A mechanisms in which a special meaning is given to an operator.",
+        "correct": "a"
+      },
+      {
+        "question": "What is operator overloading?",
+        "a": "A member function that is invoked whenever you create an object; it has the same name as that of the class.",
+        "b": "A class whose objects cannot be created.",
+        "c": "A mechanism in which a special meaning is given to an operator.",
+        "d": "Displaying the essential details to the user while hiding the irrelevant or particular details that you don’t want to show to a user.",
+        "correct": "c"
+      },
+      {
+        "question": "What is a friend function?",
+        "a": "Friend of all other functions.",
+        "b": "A class whose objects cannot be created.",
+        "c": "Function that can access private, public and protect members of the class.",
+        "d": "Library of container templates that provide generic classes and functions.",
+        "correct": "c"
+      },
+      {
+        "question": "What is inheritance?",
+        "a": "The mechanism in which you can create a new class i.e. child class from the existing class i.e. parent class.",
+        "b": "A class whose objects cannot be created.",
+        "c": "Function that can access private, public and protect members of the class.",
+        "d": "Library of container templates that provide generic classes and functions.",
+        "correct": "a"
+      },
+      {
+        "question": "What should be the correct statement about string objects in C++?",
+        "a": "String objects should necessarily be terminated by a null character",
+        "b": "String objects have a static size",
+        "c": "String objects have a dynamic size",
+        "d": "String objects use extra memory than required.",
+        "correct": "c"
+      },
+      {
+        "question": "What are void pointers?",
+        "a": "The variables that store the memory address of another variable.",
+        "b": "A pointer with no associated data type",
+        "c": "An automatically executed member function whenever an object is created",
+        "d": "A class whose objects cannot be created.",
+        "correct": "b"
+      },
+      {
+        "question": "Which among the following operators cannot be overloaded?",
+        "a": "-",
+        "b": "+",
+        "c": "?:",
+        "d": "%",
+        "correct": "c"
+      },
+      {
+        "question": "What is the size of the int data type?",
+        "a": "4 bytes",
+        "b": "1 byte",
+        "c": "8 bytes",
+        "d": "2 bytes",
+        "correct": "a"
+      },
+      {
+        "question": "What among these is used to return the number of characters in the string?",
+        "a": "Size",
+        "b": "Both size and length",
+        "c": "Name",
+        "d": "length",
+        "correct": "b"
+      },
+      {
+        "question": "Who invented C++?",
+        "a": " Bjarne Stroustrup",
+        "b": "Ken Thompson",
+        "c": "Brian Kernighan",
+        "d": "Dennis Ritchie",
+        "correct": "a"
+      },
+      {
+        "question": "Which of the following is the correct syntax of including a user defined header files in C++?",
+        "a": "#include <userdefined>",
+        "b": "#include [userdefined]",
+        "c": "#include “userdefined”",
+        "d": "#include <userdefined.h>",
         "correct": "d"
       }
     ]
