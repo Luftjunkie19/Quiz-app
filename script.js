@@ -149,7 +149,7 @@ async function getQuiz(e) {
         showTime(`You did all in ${time} seconds !`);
         finalMessage.innerText = `Your score is ${currentPoints}/${
           data[numberOfQuiz].questions.length
-        }, ${procentage * 100}%`;
+        }, ${(procentage * 100).toFixed(0)}%`;
       }
 
       question.innerText =
