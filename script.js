@@ -136,8 +136,8 @@ async function getQuiz(e) {
         currentQuestion = data[numberOfQuiz].questions.length - 1;
         clearInterval(interval);
 
-        let mins = timeHolder.innerText.split(":")[0];
-        let seconds = timeHolder.innerText.split(":")[1];
+        let mins = timeHolder.innerText.split(":")[1];
+        let seconds = timeHolder.innerText.split(":")[2];
 
         gameContainer.style.display = "none";
         gameOver.style.display = "flex";
@@ -158,6 +158,7 @@ async function getQuiz(e) {
         }
 
         showTime(`You did all in ${mins}:${seconds}`);
+
         finalMessage.innerText = `Your score is ${currentPoints}/${
           data[numberOfQuiz].questions.length
         }, ${(procentage * 100).toFixed(0)}%`;
