@@ -104,7 +104,16 @@ async function getQuiz(e) {
 
     let interval = setInterval(() => {
       timeForAnswer++;
-      timeHolder.innerText = `Seconds: ${timeForAnswer}`;
+
+      let mins = Math.floor(timeForAnswer / 60);
+      let seconds = Math.floor(timeForAnswer % 60);
+
+      mins < 10 ? `0` + `${mins}` : `${mins}`;
+      seconds < 10 ? `0${seconds}` : `${seconds}`;
+
+      timeHolder.innerText = `time: ${
+        mins < 10 ? `0` + `${mins}` : `${mins}`
+      }:${seconds < 10 ? `0` + `${seconds}` : `${seconds}`}`;
     }, 1000);
 
     nextBtn.addEventListener(`click`, (e) => {
@@ -127,7 +136,8 @@ async function getQuiz(e) {
         currentQuestion = data[numberOfQuiz].questions.length - 1;
         clearInterval(interval);
 
-        let time = timeHolder.innerText.split(" ")[1];
+        let mins = timeHolder.innerText.split(":")[0];
+        let seconds = timeHolder.innerText.split(":")[1];
 
         gameContainer.style.display = "none";
         gameOver.style.display = "flex";
@@ -147,7 +157,7 @@ async function getQuiz(e) {
           playVideo("videos/OWCA WK - motywacja_Trim.mp4");
         }
 
-        showTime(`You did all in ${time} seconds !`);
+        showTime(`You did all in ${mins}:${seconds}`);
         finalMessage.innerText = `Your score is ${currentPoints}/${
           data[numberOfQuiz].questions.length
         }, ${(procentage * 100).toFixed(0)}%`;
