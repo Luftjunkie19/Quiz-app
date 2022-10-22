@@ -111,7 +111,7 @@ async function getQuiz(e) {
       mins < 10 ? `0` + `${mins}` : `${mins}`;
       seconds < 10 ? `0${seconds}` : `${seconds}`;
 
-      timeHolder.innerText = `time: ${
+      timeHolder.innerText = `Time: ${
         mins < 10 ? `0` + `${mins}` : `${mins}`
       }:${seconds < 10 ? `0` + `${seconds}` : `${seconds}`}`;
     }, 1000);
