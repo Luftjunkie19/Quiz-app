@@ -94,9 +94,9 @@ body {
   position: absolute;
   top: 0;
   right: 0;
-  padding: 10px;
+  padding: 6px;
   background-color: #3299ff;
-  margin: 10px;
+  margin: 6px;
 }
 
 .question {
@@ -112,7 +112,8 @@ body {
 
 .answer-controller {
   display: flex;
-  margin: 20px;
+  padding: 2px;
+  margin-top: 12px;
 }
 
 label {
@@ -214,9 +215,9 @@ label {
   }
 
   .img-control {
-    height: 80px;
-    width: 200px;
-    padding: 10px;
+    height: 100px;
+    width: 150px;
+    padding: 20px;
   }
 
   .img-control img {
@@ -240,8 +241,8 @@ label {
   }
 
   .game-container {
-    width: 400px;
-    height: 350px;
+    width: 450px;
+    height: 400px;
     padding: 40px;
   }
 
@@ -270,5 +271,46 @@ label {
 
   .video-size {
     width: 340px;
+  }
+}
+
+@media (min-width: 700px) and (max-width: 1140px) {
+  .quiz-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .container {
+    margin: 120px;
+  }
+
+  .header {
+    font-size: 24px;
+  }
+
+  .quiz-choice {
+    height: 280px;
+    width: 300px;
+    margin: 20px;
+  }
+
+  .img-control {
+    height: 100px;
+    width: 150px;
+    padding: 10px;
+  }
+
+  .img-control img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+  }
+  .game-container {
+    height: 475px;
+  }
+  .question {
+    margin-top: 70px;
+    font-size: 20px;
   }
 }
