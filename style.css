@@ -54,9 +54,6 @@ body {
   grid-template-columns: repeat(5, 1fr);
   text-align: center;
   grid-gap: 15px;
-  position: relative;
-  top: 0;
-  left: 0;
 }
 
 .game-container {
@@ -137,7 +134,7 @@ label {
   flex-direction: column;
   background-color: white;
   color: #318ce7;
-  padding: 15px;
+  padding: 20px;
 }
 
 .img-control {
@@ -202,4 +199,76 @@ label {
   width: 100% !important;
   height: auto !important;
   border-radius: 5px;
+}
+
+@media (max-width: 650px) {
+  .quiz-container {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .quiz-choice {
+    height: 250px;
+    width: 300px;
+    margin: 20px;
+  }
+
+  .img-control {
+    height: 80px;
+    width: 200px;
+    padding: 10px;
+  }
+
+  .img-control img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+  }
+
+  .btn {
+    padding: 5px;
+    font-size: 14px;
+  }
+
+  .container {
+    margin: 120px;
+  }
+
+  .header {
+    font-size: 24px;
+  }
+
+  .game-container {
+    width: 450px;
+    height: 380px;
+    padding: 40px;
+  }
+
+  .score {
+    margin: 5px;
+    font-size: 16px;
+  }
+
+  .time {
+    padding: 5px;
+    margin: 5px;
+    border-radius: 5px;
+  }
+
+  .question {
+    margin-top: 60px;
+    font-size: 16px;
+  }
+  label {
+    font-size: 12px;
+  }
+
+  .game-over {
+    width: 380px;
+  }
+
+  .video-size {
+    width: 340px;
+  }
 }

@@ -17,6 +17,7 @@ const timeNeeded = document.querySelector(".time-text");
 const moveBackBtn = document.querySelector(".btn.move-back");
 const headerText = document.querySelector(".header");
 let video = document.querySelector("video");
+const navbar = document.querySelector("nav");
 
 function playVideo(src) {
   video.src = `${src}`;
