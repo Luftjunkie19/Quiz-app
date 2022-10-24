@@ -233,7 +233,7 @@ label {
   }
 
   .container {
-    margin: 120px;
+    margin: 160px;
   }
 
   .header {
@@ -241,8 +241,8 @@ label {
   }
 
   .game-container {
-    width: 450px;
-    height: 400px;
+    width: 400px;
+    height: 370px;
     padding: 40px;
   }
 
