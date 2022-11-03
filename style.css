@@ -15,12 +15,12 @@ body {
   position: fixed;
   top: 0;
   left: 0;
-  right: 0;
-  z-index: 1000px;
+  z-index: 10000px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 70px;
+  width: 100%;
   background-color: rgb(255, 249, 249);
   padding: 10px;
   color: #318ce7;
@@ -42,7 +42,6 @@ body {
 
 .container {
   height: 100vh;
-  margin: 50px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -241,8 +240,8 @@ label {
   }
 
   .game-container {
-    width: 400px;
-    height: 370px;
+    width: 370px;
+    height: 350px;
     padding: 40px;
   }
 
@@ -282,10 +281,6 @@ label {
 
   .container {
     margin: 120px;
-  }
-
-  .header {
-    font-size: 24px;
   }
 
   .quiz-choice {

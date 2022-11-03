@@ -19,6 +19,15 @@ const headerText = document.querySelector(".header");
 let video = document.querySelector("video");
 const navbar = document.querySelector("nav");
 
+window.addEventListener("click", (e) => {
+  let clientY = e.clientY;
+  let clientX = e.clientX;
+  let clientOffsetY = e.offsetY;
+  let clientOffsetX = e.offsetX;
+
+  console.log(clientY, clientX, clientOffsetY, clientOffsetX);
+});
+
 function playVideo(src) {
   video.src = `${src}`;
   video.play();
@@ -90,8 +99,8 @@ async function getQuiz(e) {
   if (target.classList.contains("move-to")) {
     e.preventDefault();
     headerText.style.display = "none";
-    gameContainer.style.display = "flex";
     quizContainer.style.display = "none";
+    gameContainer.style.display = "flex";
 
     let numberOfQuiz = +target.id;
     console.log(data[numberOfQuiz].questions[currentQuestion]);
